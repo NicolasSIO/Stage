@@ -4,11 +4,17 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h2>Demande de l'adresse e-mail</h2>
+		<div class="logo">
+			<img src="P:\renaud.farvacque\Nicolas-Stage\logo_big.png">
+		</div>
 		<div class="divPrincipale">
+		<h3 class="titre">Demande de l'adresse e-mail</h2>
 			<div class="divSecondaire">
-				<label>Entrez votre adresse mail: </label>
-				<input type="email" name="email" class="container premierElement" placeholder="Votre adresse mail"><br/>
+				<label>Entrez votre adresse mail : </label>
+				<input type="email" name="email" maxlength="46" class="container premierElement imageMail" placeholder="Votre adresse mail"><br/>
+			</div>
+			<div>
+				<input type="button" value="Retour à MANTIS" class="btn retour" href="https://forgeaxyus.local.axyus.com/mantis/login_page.php">
 			</div>
 			<div class="align-right">
 				<input type="submit" class="btn" value="Envoyer"/>

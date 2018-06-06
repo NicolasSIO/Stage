@@ -4,15 +4,18 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h2>Réinitialisation du mot de passe</h2>
+		<div class="logo">
+			<img src="P:\renaud.farvacque\Nicolas-Stage\logo_big.png">
+		</div>
 		<div class="divPrincipale">
+		<h3 class="titre" >Réinitialisation du mot de passe</h2>
 			<div class="divSecondaire">
-				<label for="nouveauMdp">Entrez le nouveau mot de passe: </label>
-				<input type="password" name="nouveauMdp" class="container premierElement" id="nouveauMdp" placeholder="Entrez le mot de passe"><br/>
+				<label for="nouveauMdp">Entrez le nouveau mot de passe : </label>
+				<input type="password" name="nouveauMdp" maxlength="73" class="container premierElement imageMdp" id="nouveauMdp" placeholder="Entrez le mot de passe"><br/>
 			</div>
 			<div class="divSecondaire">
-				<label for="confirmation">Confirmez le nouveau mot de passe: </label>
-				<input type="password" name="confirmation" class="container" id="confirmation" placeholder="Confirmez le mot de passe"><br/>
+				<label for="confirmation">Confirmez le nouveau mot de passe : </label>
+				<input type="password" name="confirmation" maxlength="73" class="container imageMdp" id="confirmation" placeholder="Confirmez le mot de passe"><br/>
 			</div>
 			<div class="align-right">
 				<input type="submit" class="btn" value="Envoyer"/>
