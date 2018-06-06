@@ -1,0 +1,57 @@
+h2{
+	text-decoration: underline;
+}
+
+input[type="submit"]{
+	padding: 10px 10px 10px 7.5px;
+	width: 10%;
+	background-color: #696969;
+	color: #FFFFFF;
+	border: 5px solid #696969;
+}
+
+label{
+    padding: 10px 5px 10px 5px;
+    display: inline-block;
+	width: 30%;
+	background-color: #F7F7F7;
+}
+
+.btn{
+	border-color: #696969;
+}
+
+.btn:hover{
+	border-color: #555;
+}
+
+.premierElement{
+	margin-top: 11px;
+}
+
+.divPrincipale{
+	border: 1px solid rgba(0,0,0,0.3);
+	background-color: #F7F7F7;
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
+	margin-left: 12px;
+	margin-right: 12px;
+	box-sizing: border-box;
+}
+
+.divSecondaire{
+	margin-left: 12px;
+	margin-right: 36px;
+	margin-bottom: 11px;
+}
+
+.container{
+	width: 60%;
+	background-color: #F8F8FF;
+	padding: 10px 10px 10px 10px;
+}
+
+.align-right{
+	text-align: right;
+	margin-right: 12px;
+	margin-bottom: 11px;
+}
