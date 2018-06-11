@@ -11,18 +11,17 @@
 		</div>
 		<div class="divPrincipale">
 		<h3 class="titre" >Réinitialisation du mot de passe</h2>
-			<span>Votre mot de passe doit contenir au moins une majuscule, une minuscule et un caractère spécial.</span>
 			<form method="post" action="#" onsubmit="return false" name="formulaire">
 				<div class="divSecondaire">
 					<label for="nouveauMdp">Entrez le nouveau mot de passe : </label>
-					<input type="password" name="nouveauMdp" maxlength="73" class="container premierElement imageMdp" id="nouveauMdp" placeholder="Entrez le mot de passe"><br/>
+					<input type="password" name="nouveauMdp" maxlength="73" class="container premierElement imageMdp" id="nouveauMdp" placeholder="Entrez le mot de passe" onclick="alert('Votre mot de passe doit contenir au moins une majuscule, une minuscule et un caractère spécial.')"><br/>
 				</div>
 				<div class="divSecondaire">
 					<label for="confirmation">Confirmez le nouveau mot de passe : </label>
 					<input type="password" name="confirmation" maxlength="73" class="container imageMdp" id="confirmation" placeholder="Confirmez le mot de passe"><br/>
 				</div>
 				<div class="align-right">
-					<input type="submit" class="btn" value="Envoyer" onClick="champEstVide();"/>
+					<input type="submit" class="btn" value="Envoyer" onClick="champEstVide2();"/>
 				</div>
 			</form>
 		</div>
