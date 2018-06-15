@@ -10,26 +10,24 @@
 			<div class="logo">
 				<img src="logo_big.png">
 			</div>
+			<div class="envoi_ok" id="envoi_ok"></div>
+			<div class="envoi_erreur" id="envoi_erreur"></div>
 			<div class="divPrincipale">
 			<h3 class="titre" >Réinitialisation du mot de passe</h2>
-				<span>Votre mot de passe doit contenir au moins une majuscule, une minuscule et un caractère spécial et au moins 8 caractères.</span>
+				<span>Votre mot de passe doit contenir au moins une majuscule, une minuscule, un nombre, un caractère spécial et 8 caractères.</span>
 				<form method="post" action="#" onsubmit="return false" name="formulaire">
 					<div class="divSecondaire">
 						<label for="nouveauMdp">Entrez le nouveau mot de passe : </label>
-						<input type="password" name="nouveauMdp" maxlength="73" class="container premierElement imageMdp" id="nouveauMdp" placeholder="Entrez le mot de passe" required onblur="champEstVide();">
-						<div id='erreur1'>
-						</div><br/>
+						<input type="password" name="nouveauMdp" maxlength="73" class="container premierElement imageMdp" id="nouveauMdp" placeholder="Entrez le mot de passe" oninput="effacerErreur()">
+						<div id="erreur-nouveauMdp" class="erreur"></div>
 					</div>
 					<div class="divSecondaire">
 						<label for="confirmation">Confirmez le nouveau mot de passe : </label>
-						<input type="password" name="confirmation" maxlength="73" class="container imageMdp" id="confirmation" placeholder="Confirmez le mot de passe" required onblur="champEstVide();">
-						<div id='erreur2'>
-						</div><br/>
-					</div>
-					<div id="erreur3">
+						<input type="password" name="confirmation" maxlength="73" class="container imageMdp" id="confirmation" placeholder="Confirmez le mot de passe" oninput="effacerErreur()">
+						<div id="erreur-confirmation" class="erreur"></div>
 					</div>
 					<div class="align-right">
-						<input type="submit" class="btn" value="Envoyer" onClick="champEstVide();"/>
+						<input type="submit" class="btn" value="Envoyer" onclick="champEstVide()"/>
 					</div>
 				</form>
 			</div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="champVide.js"></script>
+	</head>
+	<body>
+		<div class="col-md-offset-3 col-md-6 col-sm-10 col-md-offset-1">
+			<div class="logo">
+				<img src="logo_big.png">
+			</div>
+			<div class="envoi_ok" id="envoi_ok"></div>
+			<div class="envoi_erreur" id="envoi_erreur"></div>
+			<div class="divPrincipale">
+			<h3 class="titre">Demande de l'identifiant</h2>
+				<form method="post" action="#" onsubmit="return false" name="formulaire">	
+					<div class="divSecondaire">
+						<label for="identifiant">Entrez votre identifiant : </label>
+						<input type="text" name="identifiant" id="identifiant" maxlength="46" class="container premierElement" autocomplete="off" placeholder="Votre identifiant">
+					</div>
+					<div>
+						<a href="https://forgeaxyus.local.axyus.com/mantis/login_page.php" type="button" class="btn retour">Retour à MANTIS</a>
+					</div>
+					<div class="align-right">
+						<input type="submit" class="btn" value="Envoyer" onclick="champEstVide2()"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
