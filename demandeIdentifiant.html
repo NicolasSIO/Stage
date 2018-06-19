@@ -17,13 +17,14 @@
 				<form method="post" action="#" onsubmit="return false" name="formulaire">	
 					<div class="divSecondaire">
 						<label for="identifiant">Entrez votre identifiant : </label>
-						<input type="text" name="identifiant" id="identifiant" maxlength="46" class="container premierElement" autocomplete="off" placeholder="Votre identifiant">
+						<input type="text" name="identifiant" id="identifiant" maxlength="46" class="container premierElement" autocomplete="off" placeholder="Votre identifiant" oninput="effacerErreurGenerique(this)">
+						<div id="erreur_identifiant" class="erreur"></div>
 					</div>
 					<div>
 						<a href="https://forgeaxyus.local.axyus.com/mantis/login_page.php" type="button" class="btn retour">Retour à MANTIS</a>
 					</div>
 					<div class="align-right">
-						<input type="submit" class="btn" value="Envoyer" onclick="champEstVide2()"/>
+						<input type="submit" class="btn" value="Envoyer" onclick="champEstVideId()"/>
 					</div>
 				</form>
 			</div>

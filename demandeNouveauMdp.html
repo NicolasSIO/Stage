@@ -18,16 +18,16 @@
 				<form method="post" action="#" onsubmit="return false" name="formulaire">
 					<div class="divSecondaire">
 						<label for="nouveauMdp">Entrez le nouveau mot de passe : </label>
-						<input type="password" name="nouveauMdp" maxlength="73" class="container premierElement imageMdp" id="nouveauMdp" placeholder="Entrez le mot de passe" oninput="effacerErreur()">
-						<div id="erreur-nouveauMdp" class="erreur"></div>
+						<input type="password" name="nouveauMdp" maxlength="73" class="container premierElement imageMdp" id="nouveauMdp" placeholder="Entrez le mot de passe" oninput="effacerErreurGenerique(this)">
+						<div id="erreur_nouveauMdp" class="erreur"></div>
 					</div>
 					<div class="divSecondaire">
 						<label for="confirmation">Confirmez le nouveau mot de passe : </label>
-						<input type="password" name="confirmation" maxlength="73" class="container imageMdp" id="confirmation" placeholder="Confirmez le mot de passe" oninput="effacerErreur()">
-						<div id="erreur-confirmation" class="erreur"></div>
+						<input type="password" name="confirmation" maxlength="73" class="container imageMdp" id="confirmation" placeholder="Confirmez le mot de passe" oninput="effacerErreurGenerique(this)">
+						<div id="erreur_confirmation" class="erreur"></div>
 					</div>
 					<div class="align-right">
-						<input type="submit" class="btn" value="Envoyer" onclick="champEstVide()"/>
+						<input type="submit" class="btn" value="Envoyer" onclick="champEstVideMdp()"/>
 					</div>
 				</form>
 			</div>
