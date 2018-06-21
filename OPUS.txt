@@ -1,0 +1,10 @@
+svn+ssh://artemisia.local.axyus.com/svn/AXYUS_OPUS
+
+<base href="${pageContext.request.contextPath}/"></base>
+<!--[if IE]><script type="text/javascript">
+// Fix for IE ignoring relative base tags.
+(function() {
+    var baseTag = document.getElementsByTagName('base')[0];
+    baseTag.href = baseTag.href;
+})();
+</script><![endif]-->
